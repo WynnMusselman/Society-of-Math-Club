@@ -198,17 +198,62 @@ td a:hover{
 	font-size: 120%;
 }
 
+/* --- current leadership styling ---  */
+
 .leadership-entry{
-	margin-top: 7%;
 	margin-bottom: 5%;
-	clear: both;
-	overflow: auto;
+
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
 }
 
-.leadership-entry img{
-	width: 40%;
+.leadership-entry .left{
+	width: 50%;
+	padding: 3%;
+}
+
+.leadership-entry .leader-img{
+	width: 50%;
+	padding: 3%;
+}
+
+.leadership-entry .leader-img img{
+	max-width: 30vw;
+	margin: auto;
+	object-fit: contain;
 	border-radius: 5px;
 }
+
+
+/* --- past leadership styling --- */
+.past-leadership{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+.past-leadership .left{
+	width: 20%;
+	margin: 2%;
+}
+
+.past-leadership .left img{
+	max-width: 100%;
+	object-fit: contain;
+	/* display: block; */
+}
+
+.past-leadership .right{
+	width: 80%;
+	margin: 2%;
+}
+
+
 /* 
 misc {
 	float: left;
