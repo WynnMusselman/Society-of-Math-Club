@@ -209,6 +209,7 @@ td a:hover{
 	width: 40%;
 	border-radius: 5px;
 }
+/* 
 misc {
 	float: left;
 	clear: none;
@@ -246,7 +247,7 @@ statement {
 	border-style: solid;
 	border-width: 5px 1px 1px 1px;
 	border-radius: 5px;
-}
+} */
 
 .col-info {
 	font-family: "Aony";
@@ -302,83 +303,97 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-  .left, .right, misc, misc subsection, statement, .col-misc, .col-info, .col-misc subsection {
-    width: 94%; 
-	margin: 1%;
-	padding: 2%;
-    clear: both; 
-	float: left;
-  }
-  .leadership-entry {
-	  overflow: hidden;
-  }
-  .leadership-entry img{
-	  clear: both;
-	  float: center;
-	  width: 94%;
-	  padding-left: 2%;
-	  padding-right: 2%;
-	  border-radius: 5px;
-  }
-  h1 {
-	  font-size: 350%;
-	  padding-top: 10%;
-}
-.navlogo{
-	display: block;
-	font-size: 210%;
-}
-.
+	.left, .right, .col-misc, .col-info, .col-misc  {
+		width: 94%; 
+		margin: 1%;
+		padding: 2%;
+		clear: both; 
+		float: left;
+	}
+
+	.leadership-entry {
+		overflow: hidden;
+	}
+
+	.leadership-entry img{
+		clear: both;
+		float: center;
+		width: 94%;
+		padding-left: 2%;
+		padding-right: 2%;
+		border-radius: 5px;
+	}
+
+	h1 {
+		font-size: 350%;
+		padding-top: 10%;
+	}
+
+	.navlogo{
+		display: block;
+		font-size: 210%;
+	}
 }
 
 @media screen and (max-width: 350px) {
-  .left, .right, misc, misc subsection, statement, .col-misc, .col-info, .col-misc subsection {
-    width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+
+	.left, .right, .col-misc, .col-info, .col-misc {
+	width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
 	margin: 1%;
 	padding: 2%;
-    clear: both%; /* The width is 100%, when the viewport is 800px or smaller */
+	clear: both; /* The width is 100%, when the viewport is 800px or smaller */
 	float: center;
-  }
-  h1 {
-	  font-size: 250%;
-	  padding-top: 10%;
-}
-  h2 {
-	  font-size: 150%;
-}
- h3 {
-	 font-size 130%;
- }
- .left h3, .right h3 {
-	 padding-top: 22px;
-	 font-size: 90%;
- }
-.navlogo{
-	display: block;
-	font-size: 150%;
-}
+	}
+
+	h1 {
+		font-size: 250%;
+		padding-top: 10%;
+		}
+
+	h2 {
+		font-size: 150%;
+	}
+
+	h3 {
+		font-size: 130%;
+	}
+
+	.left h3, .right h3 {
+		padding-top: 22px;
+		font-size: 90%;
+	}
+		
+	.navlogo{
+		display: block;
+		font-size: 150%;
+	}
 }
 
 @media screen and (max-width: 200px) {
-  .left, .right, misc, misc subsection, statement, .col-misc, .col-info, .col-misc subsection {
-    width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
-	margin: 1%;
-	padding: 2%;
-    clear: both%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-  h1 {
-	  font-size: 190%;
-	  padding-top: 10%;
-}
-  h2 {
-	  font-size: 140%;
-}
-.navlogo{
-	display: block;
-	font-size: 100%;
-}
-p {
-	font-size: 70%;
-}
 
+	.left, .right, .col-misc, .col-info, .col-misc {
+		width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+		margin: 1%;
+		padding: 2%;
+		clear: both; /* The width is 100%, when the viewport is 800px or smaller */
+	}
 
+	h1 {
+		font-size: 190%;
+		padding-top: 10%;
+	}
+
+	h2 {
+		font-size: 140%;
+	}
+		
+	.navlogo{
+		display: block;
+		font-size: 100%;
+	}
+		
+	p {
+		font-size: 70%;
+	}
+
+}
