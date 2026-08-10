@@ -1,11 +1,11 @@
-<style>
+
 body{
     position: static;
 }
-page {
+/* page {
 	background-color: black;
 	height: 100%
-}
+} */
 span {
 	display: inline-block;
 	vertical-align: middle;
@@ -380,5 +380,5 @@ footer {
 p {
 	font-size: 70%;
 }
-}
-</style>
+
+
