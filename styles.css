@@ -166,7 +166,7 @@ td a:hover{
 /* styling for boxes with text */
 .box-text{
 	display: grid;
-	place-items: center;
+	align-items: center;
 
 	margin: 2%;
 	width: 50%;
@@ -184,6 +184,10 @@ td a:hover{
 .box-text h3{
 	margin: 2%;
 	text-align: center;
+}
+
+.box-text h4{
+	text-align: left;
 }
 
 .box-text p{
@@ -254,6 +258,21 @@ td a:hover{
 	font-size: 120%;
 }
 
+/* --- homepage styling --- */
+#homepage{
+	margin-bottom: 5%;
+	display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#homepage h4, #homepage p{
+	text-decoration: none;
+	text-align: left;
+	margin: 0 5%;
+}
+
+
 /* --- current leadership styling ---  */
 .leadership-entry{
 	margin-bottom: 5%;
@@ -273,8 +292,9 @@ td a:hover{
     justify-content: space-between;
     align-items: stretch;
     width: 100%;
-
 	height: 15vw;
+
+	text-align: center;
 }
 
 .past-leadership .box-img{
@@ -298,7 +318,6 @@ td a:hover{
 	width: 80%;
 	margin: 2%;
 }
-
 
 
 /* 
@@ -340,6 +359,14 @@ statement {
 	border-width: 5px 1px 1px 1px;
 	border-radius: 5px;
 } */
+
+/* adds the underline to the header of sections (like the contact title on the home page) */
+.section-header{
+	border-bottom: 3px black solid;
+	width: 90%;
+	margin: auto;
+}
+
 
 .col-info {
 	font-family: "Aony";
