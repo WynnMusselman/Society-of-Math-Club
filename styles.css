@@ -33,7 +33,7 @@ h2 {
 	font-family: Times;
     font-size: calc(2px + 3.8vw);
     text-align: center;
-	/* text-decoration: italic; */
+	/* font-style: italic; */
 }
 
 h3{
@@ -162,6 +162,16 @@ td a:hover{
 
 
 /* BOXES - styling for every box on the page */
+/* --- styling for boxes ---  */
+.box{
+	margin-bottom: 5%;
+
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
 
 /* styling for boxes with text */
 .box-text{
@@ -203,7 +213,7 @@ td a:hover{
 .box-img img{
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	border-radius: 5px;
 }
 
@@ -272,17 +282,10 @@ td a:hover{
 	margin: 0 5%;
 }
 
-
-/* --- current leadership styling ---  */
-.leadership-entry{
-	margin-bottom: 5%;
-
-	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
+a {
+	text-decoration: none;
 }
+
 
 
 /* --- past leadership styling --- */
@@ -365,6 +368,7 @@ statement {
 	border-bottom: 3px black solid;
 	width: 90%;
 	margin: auto;
+	margin-bottom: 4%;
 }
 
 
