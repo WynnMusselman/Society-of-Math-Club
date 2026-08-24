@@ -41,7 +41,6 @@ h4{
 h5{
 	font-size: calc(2px + 1.8vw);
 	text-align: center;
-
 }
 
 h6{
@@ -59,7 +58,7 @@ blockquote {
 	padding-left: 1em;
 }
 
-/*NAVIGATION*/
+/*--- navigation --- */
 nav {
 	margin-top:1%;
     text-align: center;
@@ -72,6 +71,7 @@ nav {
     font-size: 100%;
 	text-align: left;
 }
+
 nav a {
     margin: 0;
     color: black;
@@ -81,29 +81,32 @@ nav a {
 	height: 4%;
 	text-decoration: none;
 }
+
 nav a:hover{
     color: white;
     background-color: rgba(0, 0, 0, 0.7); 
 	padding: -100px;
 	border-radius: 10px;
 }
+
 nav .current{
     color: black;
     background-color: rgba(0, 0, 0, 0.1); 
 	padding: -100px;
 	border-radius: 10px;
 }
+
 nav li {
     list-style-type: none;
     display: inline;
 }
+
 .navlogo {
-font-size: 300%; padding-top: -5%; display: inline;
+	font-size: 300%; padding-top: -5%; display: inline;
 }
 
 
-
-/*HEADER*/
+/* --- header styling --- */
 header{
     padding-top: 1%;
     padding-bottom: 1%;
@@ -120,68 +123,36 @@ header img{
 
 
 /*TEXT*/
+
+/* article = wrapper for all body text on every page. added by skyler */
 article{
 	font-family: "Aony";
     width: 90%;
-	margin-left: 5%;
+	/* margin-left: 5%;
 	margin-right: 5%;
-	margin-top: 5%;
+	margin-top: 5%; */
+	margin: 5%;
     clear: both;
 }
 
-
-/*ARTICLES BY TIME*/
-table{
-	float: left;
-	clear: none;
-	margin-left: 19%;
-	padding-left: 1%;
-	padding-top: 1%;
-	padding-right: 2%;
-	padding-bottom: 2%;
-	width: 60%;
-	overflow: wrap;
-	border-style: solid;
-	border-width: 10px 1px 1px 1px;
-	border-radius: 10px;
-	border-spacing: 0;
-	
-}
-
-td a{
-	width: 170%;
-	float: left;
-	color: black;
-	padding: 1%;
-	margin-left: 4%;
-	border: 1px solid white;
-	border-radius: 3px;
-	z-index: 100;
-}
-td a:hover{
-	background-color: lightblue;
-}
-
-
-/* BOXES - styling for every box on the page */
+ 
 /* --- styling for boxes ---  */
 .box{
-	margin-bottom: 5%;
 
 	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row; /* causes boxes inside this div to be placed next to each other in the same row / line */
+    
     align-items: stretch;
     width: 100%;
 }
 
 /* styling for boxes with text */
 .box-text{
-	flex-direction: column;
-	/* align-items: center; */
+	flex-direction: column; /* causes all elements inside this div to be placed in a column*/
 
 	margin: 2%;
-	padding: 3% 4%;
+
+	padding: 3%;
 	width: 50%;
 	overflow: wrap;
 
@@ -199,7 +170,7 @@ td a:hover{
 .box-img img{
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+	object-fit: contain; /* images will fill the entire box but may get cropped to fit */
 	border-radius: 5px;
 }
 
@@ -207,7 +178,14 @@ a {
 	text-decoration: none;
 }
 
+/* --- homepage styling --- */
+#home-box-about{
+	width: 60%;
+}
 
+#home-box-contact{
+	width: 40%;
+}
 
 /* --- past leadership styling --- */
 .past-leadership{
@@ -257,6 +235,10 @@ a {
 	margin: 0;
 }
 
+.past-talks-box{
+	width: 96%;
+}
+
 
 /* adds the underline to the header of sections (like the contact title on the home page) */
 .section-header{
@@ -279,98 +261,19 @@ footer {
     margin: 0; */
 }
 
-@media screen and (max-width: 700px) {
-	.left, .right, .col-misc, .col-info, .col-misc  {
-		width: 94%; 
-		margin: 1%;
-		padding: 2%;
-		clear: both; 
-		float: left;
+/* --- responsiveness --- */
+/* when the size of the page changes (like going from desktop to mobile), the content changes so 
+that it remains visible */
+
+/* page is below 601px (phones / small tablets) */
+@media screen and (max-width: 600px) {
+	.box{
+		flex-direction: column;
 	}
 
-	.leadership-entry {
-		overflow: hidden;
+	.box-text, .box-img, #home-box-about, #home-box-contact{
+		width: 100%;
 	}
 
-	.leadership-entry img{
-		clear: both;
-		float: center;
-		width: 94%;
-		padding-left: 2%;
-		padding-right: 2%;
-		border-radius: 5px;
-	}
-
-	h1 {
-		font-size: 350%;
-		padding-top: 10%;
-	}
-
-	.navlogo{
-		display: block;
-		font-size: 210%;
-	}
-}
-
-@media screen and (max-width: 350px) {
-
-	.left, .right, .col-misc, .col-info, .col-misc {
-	width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
-	margin: 1%;
-	padding: 2%;
-	clear: both; /* The width is 100%, when the viewport is 800px or smaller */
-	float: center;
-	}
-
-	h1 {
-		font-size: 250%;
-		padding-top: 10%;
-		}
-
-	h2 {
-		font-size: 150%;
-	}
-
-	h3 {
-		font-size: 130%;
-	}
-
-	.left h3, .right h3 {
-		padding-top: 22px;
-		font-size: 90%;
-	}
-		
-	.navlogo{
-		display: block;
-		font-size: 150%;
-	}
-}
-
-@media screen and (max-width: 200px) {
-
-	.left, .right, .col-misc, .col-info, .col-misc {
-		width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
-		margin: 1%;
-		padding: 2%;
-		clear: both; /* The width is 100%, when the viewport is 800px or smaller */
-	}
-
-	h1 {
-		font-size: 190%;
-		padding-top: 10%;
-	}
-
-	h2 {
-		font-size: 140%;
-	}
-		
-	.navlogo{
-		display: block;
-		font-size: 100%;
-	}
-		
-	p {
-		font-size: 70%;
-	}
-
+	/* fix responsiveness on leadership page */
 }
