@@ -4,24 +4,16 @@
 	box-sizing: border-box;
 }
 
-/* body{
-    position: static;
-} */
-
-/* page {
-	background-color: black;
-	height: 100%
-} */
-
 span {
 	display: inline-block;
 	vertical-align: middle;
 	line-height: normal;
 }
 
+/* --- Header text styling --- */
 h1 {
 	font-family: Times;
-    font-size: calc(2px + 5vw);
+    font-size: calc(2px + 5vw); /* calc(2px + xvw) - makes text responsive, font size changes with page size*/
     color: black;
     margin: 1%;
 	margin-top: 6%;
@@ -29,11 +21,9 @@ h1 {
 }
 
 h2 {
-	clear: both;
 	font-family: Times;
     font-size: calc(2px + 3.8vw);
     text-align: center;
-	/* font-style: italic; */
 }
 
 h3{
@@ -213,10 +203,6 @@ td a:hover{
 	border-radius: 5px;
 }
 
-
-/* --- homepage styling --- */
-
-
 a {
 	text-decoration: none;
 }
@@ -272,46 +258,6 @@ a {
 }
 
 
-/* 
-misc {
-	float: left;
-	clear: none;
-	margin-top: 5%;
-	margin-left: 4%;
-	padding-left: 1%;
-	padding-top: 1%;
-	padding-right: 3%;
-	padding-bottom: 2%;
-	width: 30%;
-	overflow: wrap;
-	border-style: solid;
-	border-width: 5px 1px 1px 1px;
-	border-radius: 5px;
-}
-misc subsection{
-	width: 100%;
-	border-style: solid;
-	border-width: 0px 0 0px 0;
-	float: left;
-	padding: 5%;
-}
-statement {
-	font-family: "Aony";
-	float: left;
-	clear: none;
-	margin-top: 5%;
-	margin-left: 8%;
-	padding-left: 1%;
-	padding-top: 1%;
-	padding-right: 3%;
-	padding-bottom: 2%;
-	width: 45%;
-	overflow: wrap;
-	border-style: solid;
-	border-width: 5px 1px 1px 1px;
-	border-radius: 5px;
-} */
-
 /* adds the underline to the header of sections (like the contact title on the home page) */
 .section-header{
 	border-bottom: 3px black solid;
@@ -320,45 +266,6 @@ statement {
 }
 
 
-.col-info {
-	font-family: "Aony";
-	float: left;
-	clear: none;
-	margin-top: 5%;
-	margin-left: 8%;
-	padding-left: 1%;
-	padding-top: 1%;
-	padding-right: 3%;
-	padding-bottom: 2%;
-	width: 35%;
-	overflow: wrap;
-	border-style: solid;
-	border-width: 5px 1px 1px 1px;
-	border-radius: 5px;
-}
-
-.col-misc {
-	float: left;
-	clear: none;
-	margin-top: 5%;
-	margin-left: 4%;
-	padding-left: 1%;
-	padding-top: 1%;
-	padding-right: 3%;
-	padding-bottom: 2%;
-	width: 43%;
-	overflow: wrap;
-	border-style: solid;
-	border-width: 5px 1px 1px 1px;
-	border-radius: 5px;
-}
-.col-misc subsection{
-	width: 100%;
-	border-style: solid;
-	border-width: 0px 0 0px 0;
-	float: left;
-	padding: 5%;
-}
 /*FOOTER*/
 footer {
     width: 100%;
