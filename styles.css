@@ -274,7 +274,7 @@ that it remains visible */
 /* page is below 601px (phones / small tablets) */
 @media screen and (max-width: 600px) {
 
-	/* images moved to a column format rather than rows */
+	/* boxes moved to a column format rather than rows */
 	.box{
 		flex-direction: column;
 	}
